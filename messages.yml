@@ -1,0 +1,25 @@
+# ============================================
+#       NoAbuse - Configuration des messages
+# ============================================
+# Codes couleur & supportés partout.
+
+prefix: "&8[&cNoAbuse&8] &r"
+
+anvil-instruction: "&eJustifiez votre passage en &6%gamemode%&e dans le champ de l'enclume, puis cliquez sur le résultat."
+anvil-hint: "&8Tapez votre raison ci-dessus, puis cliquez sur l'objet résultat."
+
+justification-too-short: "&cJustification trop courte ! Minimum &e%min% &ccaractères requis."
+justification-accepted: "&aJustification acceptée &7— &6%gamemode% &aactivé."
+justification-cancelled: "&cChangement de gamemode annulé."
+
+# %player% | %gamemode% | %reason%
+gamemode-changed: "&e%player% &7est passé en &6%gamemode% &7| &f%reason%"
+
+no-permission: "&cVous n'avez pas la permission d'utiliser cette commande."
+
+# Limite journalière atteinte
+# %gamemode% = nom du mode | %limit% = limite configurée | %remaining% = temps avant reset (HH:mm:ss)
+daily-limit-reached: "&cLimite journalière atteinte pour le mode &6%gamemode% &c(&e%limit%&c/jour). Réinitialisation dans &e%remaining%&c."
+
+reason-survival-return: "Retour en survival (automatique)"
+reason-bypass: "[BYPASS] Pas de justification requise"

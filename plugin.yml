@@ -1,0 +1,39 @@
+name: NoAbuse
+version: '1.0.0'
+main: fr.tear.noAbuse.NoAbuse
+api-version: '1.21'
+description: Justification obligatoire (enclume) avant tout changement de gamemode hors survival
+authors: [ Tear ]
+
+softdepend:
+  - Essentials
+
+commands:
+  abusegui:
+    description: Ouvre le GUI des logs de changements de gamemode
+    usage: /abusegui [page]
+    permission: noabuse.gui
+  abuselogs:
+    description: Affiche les logs dans le chat
+    usage: /abuselogs [page]
+    permission: noabuse.admin
+
+permissions:
+  noabuse.admin:
+    description: Accès aux commandes admin NoAbuse
+    default: op
+    children:
+      noabuse.gui: true
+      noabuse.notify: true
+  noabuse.gui:
+    description: Accès au GUI /abusegui — assignable via LuckPerms
+    default: op
+  noabuse.bypass:
+    description: Bypass permanent — pas de justification ni de limite requise
+    default: false
+  noabuse.notify:
+    description: Reçoit les notifications de changement de gamemode
+    default: op
+  noabuse.bypass.limit:
+    description: Bypass uniquement les limites journalières (justification toujours requise)
+    default: false

@@ -1,0 +1,35 @@
+# ============================================
+#         NoAbuse - Configuration
+# ============================================
+# Pour les messages, éditez messages.yml.
+
+# Notifier les admins connectés (noabuse.notify) à chaque changement de gamemode
+notify-admins: true
+
+# Écrire les logs dans un fichier texte (plugins/NoAbuse/)
+log-to-file: true
+log-file-name: "gamemode_logs.txt"
+
+# Nombre maximum de logs gardés en mémoire
+max-logs-memory: 500
+
+# Titre du GUI /abusegui
+gui-title: "&8[ &cNoAbuse &8- &7Logs &8]"
+
+# Longueur minimale de la justification dans l'enclume
+min-justification-length: 5
+
+# ============================================
+#         Limites journalières
+# ============================================
+# Nombre maximum de fois qu'un joueur peut passer en Créatif par jour.
+# Mettre à -1 pour désactiver la limite.
+daily-limit-creative: 3
+
+# Nombre maximum de fois qu'un joueur peut passer en Spectateur par jour.
+# Mettre à -1 pour désactiver la limite.
+daily-limit-spectator: 5
+
+# Nombre maximum de fois qu'un joueur peut passer en Aventure par jour.
+# Mettre à -1 pour désactiver la limite.
+daily-limit-adventure: -1
